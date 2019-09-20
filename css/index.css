@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Quite Chocolatey";
+  src: url("subset-QuiteChocolatey.eot");
+  src: url("subset-QuiteChocolatey.eot?#iefix") format("embedded-opentype"), url("subset-QuiteChocolatey.woff2") format("woff2"), url("subset-QuiteChocolatey.woff") format("woff"), url("subset-QuiteChocolatey.ttf") format("truetype"), url("subset-QuiteChocolatey.svg#QuiteChocolatey") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=index.css.map */
