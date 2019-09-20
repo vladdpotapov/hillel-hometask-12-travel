@@ -1,0 +1,22 @@
+@mixin text-style ($fz, $fw, $ls, $col) {
+    font-size: $fz;
+    font-weight: $fw;
+    letter-spacing: $ls;
+    color: $col;
+}
+
+@mixin link-style ($fz, $fw, $ls, $tt, $col) {
+    font-size: $fz;
+    font-weight: $fw;
+    letter-spacing: $ls;
+    text-transform: $tt;
+    color: $col;
+}
+
+@mixin h2-style ($fz, $fw, $ls, $tt, $col) {
+    font-size: $fz;
+    font-weight: $fw;
+    letter-spacing: $ls;
+    text-transform: $tt;
+    color: $col;
+}
