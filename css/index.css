@@ -1,9 +1,260 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 @font-face {
   font-family: "Quite Chocolatey";
-  src: url("subset-QuiteChocolatey.eot");
-  src: url("subset-QuiteChocolatey.eot?#iefix") format("embedded-opentype"), url("subset-QuiteChocolatey.woff2") format("woff2"), url("subset-QuiteChocolatey.woff") format("woff"), url("subset-QuiteChocolatey.ttf") format("truetype"), url("subset-QuiteChocolatey.svg#QuiteChocolatey") format("svg");
+  src: url("../fonts/Quite-Chocolately/subset-QuiteChocolatey.eot");
+  src: url("../fonts/Quite-Chocolately/subset-QuiteChocolatey.eot?#iefix") format("embedded-opentype"), url("../fonts/Quite-Chocolately/subset-QuiteChocolatey.woff2") format("woff2"), url("../fonts/Quite-Chocolately/subset-QuiteChocolatey.woff") format("woff"), url("../fonts/Quite-Chocolately/subset-QuiteChocolatey.ttf") format("truetype"), url("../fonts/Quite-Chocolately/subset-QuiteChocolatey.svg#QuiteChocolatey") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+/* GENERAL */
+.content-frame {
+  max-width: 1010px;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+  background-image: url(../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 130px;
+}
+
+/* HEADER - Topbar */
+.header__topbar {
+  display: flex;
+  margin: auto;
+  padding: 38px 0;
+}
+.header__topbar .logo-box {
+  transition: all 0.5s ease;
+}
+.header__topbar .logo-box:hover {
+  transform: scale(1.2);
+}
+.header__topbar .logo__link {
+  font-family: "Quite Chocolatey";
+  font-size: 88px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  text-transform: normal;
+  text-decoration: none;
+  color: #d03958;
+}
+.header__topbar .menu-box {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.header__topbar .menu {
+  display: flex;
+}
+.header__topbar .menu .menu-item {
+  margin-left: 15px;
+}
+.header__topbar .menu .menu-item .menu-item__link {
+  padding: 11px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.36;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #161616;
+}
+.header__topbar .menu .menu-item .menu-item__link:hover {
+  color: #ffffff;
+  background-color: #d03958;
+}
+
+.header-content {
+  display: flex;
+  position: relative;
+}
+.header-content .content-desc {
+  display: flex;
+  flex-direction: column;
+  width: 493px;
+  margin-top: 130px;
+}
+.header-content .content-desc-title {
+  font-family: Montserrat;
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: -1.8px;
+  text-transform: uppercase;
+  color: #161616;
+}
+.header-content .content-desc-title .span {
+  color: #d03958;
+}
+.header-content .content-desc-text {
+  margin-top: 47px;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  color: #161616;
+  line-height: 28px;
+}
+.header-content .form-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  width: 400px;
+  min-height: 520px;
+  background-color: #d03958;
+  padding: 33px 24px 28px 24px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  top: 150px;
+  left: 600px;
+}
+.header-content .form-box .form-title {
+  font-family: Monserrat;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.44;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header-content .form-box .form-input {
+  width: 350px;
+  height: 57px;
+  padding: 19px 0 19px 19px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.header-content .form-box .form-input:first-child {
+  margin-top: 37px;
+}
+.header-content .form-box .form-input:hover {
+  background-color: #e2ca98;
+}
+.header-content .form-box .form-input:focus {
+  background-color: #e3d5b8;
+}
+.header-content .form-box .checkbox-section {
+  display: flex;
+  padding-left: 2px;
+}
+.header-content .form-box .checkbox-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 2px;
+  justify-content: center;
+}
+.header-content .form-box .form-checkbox {
+  position: absolute;
+  margin: 0;
+  width: 19px;
+  height: 19px;
+  opacity: 0;
+  cursor: pointer;
+}
+.header-content .form-box .form-checkbox-fake {
+  width: 19px;
+  height: 19px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+.header-content .form-box .form-checkbox:checked + .form-checkbox-fake {
+  background-image: url(../img/checkmark.png);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  background-position: -0.5px 1px;
+}
+.header-content .form-box .form-checkbox-label {
+  display: block;
+  width: 300px;
+  margin-left: 13px;
+  font-family: "PT Serif";
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+}
+.header-content .form-box .form-button {
+  width: 350px;
+  height: 57px;
+  margin-top: 20px;
+  font-family: Montserrat;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #161616;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.44px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header-content .form-box .form-button:hover {
+  color: #d03958;
+  background-color: #e3d5b8;
 }
 
 /*# sourceMappingURL=index.css.map */

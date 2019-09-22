@@ -5,11 +5,12 @@
     color: $col;
 }
 
-@mixin link-style ($fz, $fw, $ls, $tt, $col) {
+@mixin link-style ($fz, $fw, $ls, $tt, $td, $col) {
     font-size: $fz;
     font-weight: $fw;
     letter-spacing: $ls;
     text-transform: $tt;
+    text-decoration: $td;
     color: $col;
 }
 
