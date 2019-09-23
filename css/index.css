@@ -94,15 +94,6 @@ table {
 .header__topbar .logo-box:hover {
   transform: scale(1.2);
 }
-.header__topbar .logo__link {
-  font-family: "Quite Chocolatey";
-  font-size: 88px;
-  font-weight: 400;
-  letter-spacing: -1.2px;
-  text-transform: normal;
-  text-decoration: none;
-  color: #d03958;
-}
 .header__topbar .menu-box {
   display: flex;
   margin-left: auto;
@@ -192,6 +183,11 @@ table {
   border: none;
   outline: none;
   transition: all 0.3s ease;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  color: #b5b5b5;
 }
 .header-content .form-box .form-input:first-child {
   margin-top: 37px;

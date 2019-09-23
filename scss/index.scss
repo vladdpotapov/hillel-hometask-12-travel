@@ -38,11 +38,6 @@
         transform: scale(1.2);
     }
 
-    .logo__link {
-        font-family: 'Quite Chocolatey';
-        @include link-style (88px, 400, -1.2px, normal, none, $color-01);
-    }
-
     //HEADER - Topbar - Menu
     .menu-box{
         display: flex;
@@ -129,6 +124,9 @@
             border: none;
             outline: none;
             transition: all 0.3s ease;
+
+            font-family: "PT Serif";
+            @include text-style (20px, 400, -0.4px, #b5b5b5);
         }
 
         .form-input:first-child {
