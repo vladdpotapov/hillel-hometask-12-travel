@@ -240,35 +240,51 @@
             align-items: center;
             text-align: center;
             margin-top: 97px;
-             
-            
+
             .item-text {
                 font-family: "PT Serif";
                 @include text-style (20px, 400, -0.4, $color-03);
                 line-height: 28px;
+                padding: 0 10px 10px 10px;
+            }
+
+            .item-link {
+                text-decoration: none;
+                transition: all 0.2s ease;
+            }
+            
+            .item-link:hover {
+                transform: scale(1.1);
+                background-color: $color-01;
+                border-radius: 10px;
+            }
+
+            .item-link:hover .item-text {
+                color: $color-04;
             }
 
             .item-text-01::before {
                 @extend %item-text-before;
                 background-image: url(../img/services-img-01.png);
+                background-position: 8px 15px;
             } 
 
             .item-text-02::before {
                 @extend %item-text-before;
                 background-image: url(../img/services-img-02.png);
-                background-position: 15px 0;
+                background-position: 20px 15px;
             }
 
             .item-text-03::before {
                 @extend %item-text-before;
                 background-image: url(../img/services-img-03.png);
-                background-position: 25px 0;
+                background-position: 30px 15px;
             }
 
             .item-text-04::before {
                 @extend %item-text-before;
                 background-image: url(../img/services-img-04.png);
-                background-position: 10px 0;
+                background-position: 15px 15px;
             }
         }
     }

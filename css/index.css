@@ -57,7 +57,7 @@ table {
 .services .services-item-box .item .item-text-04::before, .services .services-item-box .item .item-text-03::before, .services .services-item-box .item .item-text-02::before, .services .services-item-box .item .item-text-01::before {
   content: "";
   display: block;
-  width: 163px;
+  width: 180px;
   height: 188px;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -304,21 +304,35 @@ table {
   letter-spacing: -0.4;
   color: #161616;
   line-height: 28px;
+  padding: 0 10px 10px 10px;
+}
+.services .services-item-box .item .item-link {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.services .services-item-box .item .item-link:hover {
+  transform: scale(1.1);
+  background-color: #d03958;
+  border-radius: 10px;
+}
+.services .services-item-box .item .item-link:hover .item-text {
+  color: #ffffff;
 }
 .services .services-item-box .item .item-text-01::before {
   background-image: url(../img/services-img-01.png);
+  background-position: 8px 15px;
 }
 .services .services-item-box .item .item-text-02::before {
   background-image: url(../img/services-img-02.png);
-  background-position: 15px 0;
+  background-position: 20px 15px;
 }
 .services .services-item-box .item .item-text-03::before {
   background-image: url(../img/services-img-03.png);
-  background-position: 25px 0;
+  background-position: 30px 15px;
 }
 .services .services-item-box .item .item-text-04::before {
   background-image: url(../img/services-img-04.png);
-  background-position: 10px 0;
+  background-position: 15px 15px;
 }
 .services .story-box {
   background-color: #d03958;
