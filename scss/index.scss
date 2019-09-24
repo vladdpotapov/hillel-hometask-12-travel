@@ -19,8 +19,12 @@
     background-image: url(../img/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    padding-bottom: 130px;
+
+    .overlay {
+        background: rgba(227, 213, 184, 0.5);
+        background-size: cover;
+        padding-bottom: 130px;
+    }
 }
 
 /* HEADER - Topbar */
@@ -96,6 +100,7 @@
         }
     }
 
+    // Form
     .form-box {
         display: flex;
         flex-direction: column;
@@ -334,3 +339,94 @@
 
 }
 
+// MAIN - Price
+.price {
+    background-color: $color-02;
+    padding-top: 60px;
+
+    .title-box {
+        text-align: center;
+
+        .title {
+            font-family: Montserrat;
+            @include h2-style (50px, 700, -1px, uppercase, $color-03);
+        }
+    }
+
+    .price-item-box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 57px;
+
+        .price-item {
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+            text-align: center;
+            padding-top: 35px;
+            background-color: #fff;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            
+            .corner {
+                width: 150px;
+                height: 150px;
+                background-color: #b4a993;
+                position: absolute;
+                top: -75px;
+                left: -75px;
+                transform: rotate(-45deg);
+                
+                .corner-text {
+                    margin-top: 80%;
+                    font-family: "PT Serif";
+                    @include text-style (20px, 400, -0.32px, $color-03);
+                }
+            }
+
+            .price-title {
+                font-family: "PT Serif";
+                @include text-style (22px, 400, -0.44px, $color-03);
+            }
+
+            .price-figures {
+                margin-top: 41px;
+                font-family: Montserrat;
+                @include h2-style (60px, 700, -1.2px, uppercase, $color-01);
+            }
+
+            .price-desc {
+                margin-top: 12px;
+                font-family: "PT Serif";
+                @include text-style (20px, 400, -0.4px, $color-03);
+            }
+
+            .price-desc:first-child {
+                margin-top: 33px;
+            }
+
+            .price-link-box {
+                margin: 60px auto 20px auto;
+
+                .price-link {
+                    font-family: Montserrat;
+                    @include link-style (22px, 400, -0.44, uppercase, none, $color-03);
+                    padding: 18px 45px;
+                    background-color: $color-02;   
+                    border-radius: 5px;   
+                    transition: all 0.3s ease;              
+                }
+
+                .price-link-try {
+                    padding: 18px 75px;   
+                }
+
+                .price-link:hover {
+                    color: $color-04;
+                    background-color: $color-01;
+                }
+            }
+        }
+    }
+}

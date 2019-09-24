@@ -78,7 +78,10 @@ table {
   background-image: url(../img/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+}
+.header .overlay {
+  background: rgba(227, 213, 184, 0.5);
+  background-size: cover;
   padding-bottom: 130px;
 }
 
@@ -375,6 +378,105 @@ table {
 .services .story-box .story-link-box .story-link:hover {
   color: #d03958;
   background-color: #ffffff;
+}
+
+.price {
+  background-color: #e3d5b8;
+  padding-top: 60px;
+}
+.price .title-box {
+  text-align: center;
+}
+.price .title-box .title {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #161616;
+}
+.price .price-item-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 57px;
+}
+.price .price-item-box .price-item {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  text-align: center;
+  padding-top: 35px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.price .price-item-box .price-item .corner {
+  width: 150px;
+  height: 150px;
+  background-color: #b4a993;
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  transform: rotate(-45deg);
+}
+.price .price-item-box .price-item .corner .corner-text {
+  margin-top: 80%;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.32px;
+  color: #161616;
+}
+.price .price-item-box .price-item .price-title {
+  font-family: "PT Serif";
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.44px;
+  color: #161616;
+}
+.price .price-item-box .price-item .price-figures {
+  margin-top: 41px;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
+  text-transform: uppercase;
+  color: #d03958;
+}
+.price .price-item-box .price-item .price-desc {
+  margin-top: 12px;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  color: #161616;
+}
+.price .price-item-box .price-item .price-desc:first-child {
+  margin-top: 33px;
+}
+.price .price-item-box .price-item .price-link-box {
+  margin: 60px auto 20px auto;
+}
+.price .price-item-box .price-item .price-link-box .price-link {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: -0.44;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #161616;
+  padding: 18px 45px;
+  background-color: #e3d5b8;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.price .price-item-box .price-item .price-link-box .price-link-try {
+  padding: 18px 75px;
+}
+.price .price-item-box .price-item .price-link-box .price-link:hover {
+  color: #ffffff;
+  background-color: #d03958;
 }
 
 /*# sourceMappingURL=index.css.map */
