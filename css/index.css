@@ -479,4 +479,128 @@ table {
   background-color: #d03958;
 }
 
+.testimonial-gallery {
+  padding: 154px 0 100px 0;
+}
+
+.content-frame-flex {
+  display: flex;
+}
+
+.testimonial {
+  margin-right: 145px;
+}
+.testimonial .testimonial-title-box {
+  text-align: center;
+}
+.testimonial .testimonial-title-box .title {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #161616;
+}
+.testimonial .testimonial-card-box {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial .testimonial-card-box .testimonial-card {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.testimonial .testimonial-card-box .testimonial-card .testimonial-link {
+  text-decoration: none;
+  padding: 26px 77px 26px 26px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.testimonial .testimonial-card-box .testimonial-card .testimonial-link:hover {
+  background: #e3d5b8;
+}
+.testimonial .testimonial-card-box .testimonial-card .testimonial-quote {
+  font-family: "PT Serif";
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  color: #161616;
+}
+.testimonial .testimonial-card-box .testimonial-card .testimonial-author {
+  margin-top: 20px;
+  font-family: Montserrat;
+  line-height: 28px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  color: #d03958;
+}
+.testimonial .testimonial-card-box .testimonial-card .testimonial-card-photo-box {
+  position: absolute;
+  top: 26px;
+  right: -55px;
+}
+.testimonial .testimonial-card-box .testimonial-card .testimonial-card-photo-box .testimonial-card-photo {
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.testimonial .testimonial-card-box .testimonial-card .testimonial-card-photo-box-02 {
+  top: 26px;
+}
+
+.gallery {
+  margin-left: auto;
+}
+.gallery .gallery-title-box {
+  text-align: center;
+}
+.gallery .gallery-title-box .title {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #d03958;
+}
+.gallery .gallery-photo-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 86px;
+  justify-content: flex-end;
+}
+.gallery .gallery-photo-box .gallery-photo-link {
+  margin: 0 40px 28px 0;
+}
+.gallery .gallery-photo-box .gallery-photo-link .gallery-photo {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+}
+.gallery .gallery-photo-box .gallery-photo-link:nth-child(3) {
+  margin-right: 0;
+}
+.gallery .gallery-photo-box .gallery-photo-link:nth-child(6) {
+  margin-right: 0;
+}
+.gallery .gallery-link-box {
+  text-align: center;
+  margin-top: 30px;
+}
+.gallery .gallery-link-box .gallery-link {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #d03958;
+  transition: all 0.3s ease;
+}
+.gallery .gallery-link-box .gallery-link:hover {
+  color: #161616;
+}
+
 /*# sourceMappingURL=index.css.map */
