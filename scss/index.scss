@@ -558,3 +558,33 @@
         }
     }
 }
+
+// FOOTER
+.footer {
+    background-color: $color-03;
+    padding: 60px 0;
+}
+
+.content-frame-flex {
+    display: flex;
+    
+    .rights-box {
+        display: flex;
+        align-items: center;
+
+        .rights {
+            font-family: "PT Serif";
+            @include text-style (20px, 400, -0.4px, $color-04);
+
+            .rights-red {
+                color: $color-01;
+            }
+        }
+    }
+
+    .logo-box {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+}

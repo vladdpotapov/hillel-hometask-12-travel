@@ -603,4 +603,32 @@ table {
   color: #161616;
 }
 
+.footer {
+  background-color: #161616;
+  padding: 60px 0;
+}
+
+.content-frame-flex {
+  display: flex;
+}
+.content-frame-flex .rights-box {
+  display: flex;
+  align-items: center;
+}
+.content-frame-flex .rights-box .rights {
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+}
+.content-frame-flex .rights-box .rights .rights-red {
+  color: #d03958;
+}
+.content-frame-flex .logo-box {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 /*# sourceMappingURL=index.css.map */
