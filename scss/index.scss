@@ -568,6 +568,12 @@
     display: flex;
 }
 
+.content-frame-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
 .rights-box {
     display: flex;
     align-items: center;
@@ -585,7 +591,10 @@
 .logo-box {
     display: flex;
     align-items: center;
-    // margin-left: auto;
+}
+
+.logo-box-footer {
+    margin-left: auto;
 }
 
 // MEDIA
@@ -787,4 +796,26 @@
         width: 100%;
     }
 
+    // Footer
+    .footer {
+        padding: 25px 0;
+    }
+    .content-frame-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rights-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rights {
+        line-height: 25px;
+    }
+    .logo-box-footer {
+        margin-top: 20px;
+    }
 }

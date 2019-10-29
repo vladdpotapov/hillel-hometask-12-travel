@@ -693,6 +693,12 @@ table {
   display: flex;
 }
 
+.content-frame-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
 .rights-box {
   display: flex;
   align-items: center;
@@ -713,6 +719,10 @@ table {
 .logo-box {
   display: flex;
   align-items: center;
+}
+
+.logo-box-footer {
+  margin-left: auto;
 }
 
 @media (max-width: 1024px) {
@@ -904,6 +914,30 @@ table {
 
   .testimonial-card {
     width: 100%;
+  }
+
+  .footer {
+    padding: 25px 0;
+  }
+
+  .content-frame-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rights-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rights {
+    line-height: 25px;
+  }
+
+  .logo-box-footer {
+    margin-top: 20px;
   }
 }
 
